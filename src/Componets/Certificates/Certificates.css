@@ -1,0 +1,26 @@
+
+
+
+.main-Certificates {
+width: 100%;
+margin-bottom: 5rem;
+}
+.main-Certificates  .imgs{
+width: 350px;
+transition-property: transform;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 15s;
+transition: 1.2s;
+transition-delay: 100ms;
+
+}
+.main-Certificates  .imgs:hover{
+   transform: translateY(-10px) scale(1.1);
+   margin-bottom: 20px;
+   
+    }
+.main-Certificates  .imgs img{
+    max-width: 100%;
+    border-radius: 20px;
+    border: 5px solid gray;
+    }

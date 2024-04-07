@@ -1,0 +1,15 @@
+.about-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.about-container .about-img{
+  width: 40%;
+}
+.about-contain{
+  width: 60%;
+}
+.about-container .about-img img{
+
+}

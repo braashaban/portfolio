@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+}
+.main-footer{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    
+}
+.footer img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.icon-footer2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+    transition: 0.5s;
+}
+.icon-footer2 a:hover{
+    color: var(--black);
+    transform: scale(1.2);
+}
