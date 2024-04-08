@@ -38,9 +38,11 @@ const [doing ,setdoing]=useState(false)
         animate={{opacity:1,y:0}}
        transition={{duration:1 ,ease:easeOut,delay:0.6}}
        className="contactt mt-8" id='ContactUs'>
+        {/* title contact */}
       <h1 className="section-title-01 text-center" style={{ color: darkMode ? "white" : "" }}>Contact Me</h1>
       <h2 className="section-title-02 text-center" style={{ color: darkMode ? "white" : "" }}>Contact Me</h2>
       <div className="contact-form" id="contact">
+          {/* left side form */}
         <div className="w-left">
           <div className="awesome-contact">
             {/* darkMode */}

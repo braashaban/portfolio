@@ -1,7 +1,6 @@
 
 .container1{
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
@@ -34,7 +33,6 @@
   font-size: 2.3rem;
 }
 .content .description{
-  font-weight: 100;
   font-size: 20px;
   color: var(--gray);
   margin-top: 10px;

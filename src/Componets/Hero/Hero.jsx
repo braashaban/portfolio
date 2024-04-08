@@ -39,7 +39,7 @@ const Hero = () => {
               opacity: 1,
             }
           }}
-          style={{ color: darkMode ? "white" : "" }}> Hy! I Am</motion.h2>
+          style={{ color: darkMode ? "white" : "" }}> Hi! I Am</motion.h2>
 
         <TypeAnimation
           className="title"

@@ -14,9 +14,9 @@ const Toggle = () => {
   };
   return (
     <div className="toggle" onClick={handleClick}>
-      <IoSunnyOutline />
+    
       <FaRegMoon />
-      
+      <IoSunnyOutline />
       
       <div
         className="toggel-button"

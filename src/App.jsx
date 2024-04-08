@@ -10,10 +10,11 @@ import Hero from './Componets/Hero/Hero';
 import  NavBar from "./Componets/NavBar/NavBar";
 import Portfolio from './Componets/Portfolio/Portfolio';
 import Skills from './Componets/Skills/Skills';
-import Works from './Componets/Works/Works';
+
 import { useContext } from "react";
 import { themeContext } from "./Context";
 import Talk from './Componets/Talk/Talk';
+import About from './Componets/Works/About';
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -25,7 +26,7 @@ function App() {
       }}>
     <NavBar />
   <Hero />
-<Works / >
+<About / >
   <Portfolio />
   <Exp />
   <Skills />

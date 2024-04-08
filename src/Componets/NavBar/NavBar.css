@@ -48,6 +48,7 @@
   line-height: 1.50206rem;
   text-transform: capitalize;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 .btn-mode button {
@@ -115,6 +116,7 @@ button img {
   ul a {
       color: white !important;
       margin: 1.5rem 0;
+  
   }
 
   .button-nav button {

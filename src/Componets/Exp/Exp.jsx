@@ -1,26 +1,30 @@
 import './Exp.css'
 import "../Skills/Skills.css"
 import { FaBookMedical } from "react-icons/fa";
-
+import { themeContext } from '../../Context'
+import {  easeOut, motion } from "framer-motion"
+import { useContext } from 'react';
 const Exp = () => {
+  const theme=useContext(themeContext);
+  const  darkMode = theme.state.darkMode;
   return (
     <>
 <div className="Exprencies">
       <div className='Exp'>
         <div className="exp-content">
-          <div className="circle"><strong>+2</strong></div>
-          <span className='circle-1'>Years</span>
-          <p className='circle-2'>Exprinice</p>
+          <div className="circle" style={{ color: darkMode ? "black" : "" ,backgroundColor: darkMode ? "  #87e6fb": ""}}><strong>+2</strong></div>
+          <span className='circle-1' style={{ color: darkMode ? "white" : "" }}>Years</span>
+          <p className='circle-2' >Exprinice</p>
         </div>
         <div className="exp-content">
-          <div className="circle"><strong>+10</strong></div>
-          <span className='circle-1'>completed</span>
-          <p className='circle-2'>Projects</p>
+          <div className="circle" style={{ color: darkMode ? "black" : "" ,backgroundColor: darkMode ? "  #87e6fb": ""}}><strong>+10</strong></div>
+          <span className='circle-1' style={{ color: darkMode ? "white" : "" }}>completed</span>
+          <p className='circle-2 '>Projects</p>
         </div>
         <div className="exp-content">
-          <div className="circle"><strong>+10</strong></div>
-          <span className='circle-1'>Microsoft</span>
-          <p className='circle-2'>Projects</p>
+          <div className="circle" style={{ color: darkMode ? "black" : "",backgroundColor: darkMode ? "  #87e6fb": ""}}><strong>+10</strong></div>
+          <span className='circle-1' style={{ color: darkMode ? "white" : "" }}>Microsoft</span>
+          <p className='circle-2' >Projects</p>
         </div>
 
       </div>
@@ -29,10 +33,10 @@ const Exp = () => {
           <h1>language</h1>
           <hr className='line' />
           <div className="skill-box language1">
-            <span className="title2">English</span>
+            <span className="title2" style={{ color: darkMode ? "white" : "" }}>English</span>
             <div className="skill-bar">
               <span className="skill-per css">
-                <span className="tooltip">75%</span>
+                <span className="tooltip"style={{ color: darkMode ? "white" : "" }}>65%</span>
               </span>
             </div>
           </div>
@@ -40,7 +44,7 @@ const Exp = () => {
             <span className="title2">French</span>
             <div className="skill-bar">
               <span className="skill-per javascript">
-                <span className="tooltip">50%</span>
+                <span className="tooltip">30%</span>
               </span>
             </div>
           </div>

@@ -9,7 +9,8 @@ import img7 from "../../assets/imgs/7.png"
 import img8 from "../../assets/imgs/8.png"
 import img9 from "../../assets/imgs/9.png"
 import { GoArrowUpRight } from "react-icons/go";
-import "swiper/css";
+
+
 import './Portfolio.css'
 import { useContext } from "react"
 import { themeContext } from "../../Context"
@@ -27,11 +28,11 @@ const Portfolio = () => {
           initial={{opacity:0,y:-100}}
               animate={{opacity:1,y:0}}
              transition={{duration:1 ,ease:easeOut,delay:0.4}}
-      className='project-portfolio flex justify-center items-center'>
+         className='project-portfolio flex justify-center items-center'>
         <div className="projects shadow-lg transition-transform">
           <img src={img1} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }}>Business World</h2>
             <div className="arrow-content flex gap-4">
               <span> Show Website</span>
               <a href="https://braashaban.github.io/loren/index.html">
@@ -43,7 +44,7 @@ const Portfolio = () => {
         <div  className="projects shadow-lg transition-transform">
           <img src={img9} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }} >Bondi</h2>
             <div className="arrow-content flex gap-4">
               <span> Show Website</span>
               <a href="https://braashaban.github.io/bondi/">
@@ -52,34 +53,23 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div     
-          initial={{opacity:0,y:-100}}
-              animate={{opacity:1,y:0}}
-             transition={{duration:1 ,ease:easeOut,delay:0.4}}  
-        className="projects shadow-lg transition-transform">
+        <div  className="projects shadow-lg transition-transform">
           <img src={img4} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }}>Phone</h2>
             <div className="arrow-content flex gap-4">
               <span> Show Website</span>
               <a href="https://braashaban.github.io/task5-2/">
                 <GoArrowUpRight className="arrow animate-bounce" />
               </a>
-
-
             </div>
-
           </div>
 
         </div>
-        <div    
-           initial={{opacity:0,y:-100}}
-              animate={{opacity:1,y:0}}
-             transition={{duration:1 ,ease:easeOut,delay:0.4}} 
-         className="projects shadow-lg transition-transform" >
+        <div className="projects shadow-lg transition-transform" >
           <img src={img2} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }}>multi pages</h2>
             <div className="arrow-content flex gap-4">
               <span> Show Website</span>
               <a href="https://braashaban.github.io/advan/index.html">
@@ -94,7 +84,7 @@ const Portfolio = () => {
         <div   className="projects shadow-lg transition-transform">
           <img src={img5} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }}>Moshify</h2>
             <div className="arrow-content flex gap-4">
               <span> Show Website</span>
               <a href="https://braashaban.github.io/myintro/">
@@ -109,7 +99,7 @@ const Portfolio = () => {
         <div  className="projects shadow-lg transition-transform">
           <img src={img3} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }}>Education</h2>
             <div className="arrow-content flex gap-4">
               <span> Show Website</span>
               <a href="https://braashaban.github.io/task4-2/">
@@ -121,7 +111,7 @@ const Portfolio = () => {
         <div  className="projects shadow-lg transition-transform">
           <img src={img6} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }} >online course</h2>
             <div className="arrow-content flex gap-4 ">
               <span> Show Website</span>
               <a href="file:///C:/Users/Windows.10/AppData/Local/Temp/Rar$EXa2636.42397/Braa-shaban-task-2/dddd/index.html">
@@ -135,7 +125,7 @@ const Portfolio = () => {
         <div className="projects shadow-lg transition-transform">
           <img src={img7} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }}>My portfolio</h2>
             <div className="arrow-content flex gap-4">
               <span> Show Website</span>
               <a href="https://braashaban.github.io/task-3/">
@@ -147,7 +137,7 @@ const Portfolio = () => {
         <div  className="projects shadow-lg transition-transform">
           <img src={img8} alt="" />
           <div className="information  mt-4 pl-1">
-            <h2 >Business World</h2>
+            <h2 style={{ color: darkMode ? "white" : "" }}>Films</h2>
             <div className="arrow-content flex gap-4">
               <span> Show Website</span>
               <a href="https://braashaban.github.io/movies/">
