@@ -1,28 +1,23 @@
-.footer{
-    display: flex;
-    align-items: center;
-    margin: -0.5rem -3.5rem;
-    position: relative;
+
+
+footer{
+    padding: 6rem 3rem;
+    background-color: var(--orange);
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    color: white;
 }
-.main-footer{
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    
-}
-.footer img{
-    width: 100%;
-    max-width: 100%;
+
+
+.main-footer a:hover{
+    color: black;
+
+  
 }
 
 .icon-footer2{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
     gap: 18px;
     transition: 0.5s;
 }

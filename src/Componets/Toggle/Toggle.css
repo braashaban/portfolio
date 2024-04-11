@@ -28,5 +28,10 @@ width: 4rem;
     .toggle{
         border:1px solid white;
     }
+    .toggel-button{
+        border-radius: 100%;
+        background: white;
+        position: absolute;
+    }
    
 }

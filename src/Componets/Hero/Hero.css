@@ -10,6 +10,7 @@
   margin-left: 10%;
   margin-right: 10%;
  
+
 }
 
 .content {
@@ -50,7 +51,9 @@
   gap: 1rem;
 }
 .icons-hero img{
-  transform: scale(0.5);
+
+  width: 2rem;
+  margin-left: 10px;
 }
 .icons-hero a{
  cursor: pointer;

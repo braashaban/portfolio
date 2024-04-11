@@ -1,7 +1,7 @@
 
 
  .nav-container {
-  max-width: 65.63169rem;
+  max-width: 60.63169rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,10 +10,11 @@
 }
 
 .logo {
-  width: 30%;
+  width: 32%;
 }
 .logo img{
   width: 3.1rem;
+ 
 }
 .logo .logo1{
     font-size: 30px;
@@ -26,6 +27,15 @@
     font-weight: bold;
     font-style: italic;
 }
+@media(max-width:1050px){
+  .logo {
+    width: 50%;
+  }
+  .nav-items {
+    width: 50%;
+  
+  }
+}
 
 .nav-items {
   width: 80%;
@@ -36,6 +46,7 @@
 
 .nav-items ul {
   display: flex;
+  transition: 0.6s ease-in;
 }
 
 .nav-items ul a {
@@ -49,6 +60,11 @@
   text-transform: capitalize;
   text-decoration: none !important;
   cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.nav-items ul a:hover{
+  color: var(--orange);
+border-bottom: 1px solid var(--orange);
 }
 
 .btn-mode button {
@@ -56,7 +72,6 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-
   color: #0F0F0F;
   font-family: Inter;
   font-size: 0.875rem;
@@ -92,7 +107,7 @@ button img {
 
   .nav-items {
       position: fixed;
-      background-color: var(--orange);
+      background-color: gray;
       flex-direction: column;
       color: #0F0F0F;
       text-align: start;
@@ -130,16 +145,17 @@ button img {
 
 .toggle .line-1 {
   transform: translate(-5px, 7px) rotate(-45deg);
-  background-color: var(--orange);
+  background-color: black
 
 }
 
 .toggle .line-2 {
   opacity: 0;
-  background-color: var(--orange);
+  background-color: black;
 }
 
 .toggle .line-3 {
   transform: translate(-5px, -7px) rotate(45deg);
-  background-color:  var(--orange);
+  background-color:  black
+;
 }

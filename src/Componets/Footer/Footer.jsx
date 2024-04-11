@@ -1,21 +1,19 @@
 import './Footer.css'
-import footer from "../../assets/imgs/footer.png"
+
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6'
 import { FaPinterest } from 'react-icons/fa'
+import { Link } from 'react-scroll'
 
 const Footer = () => {
     return (
         <footer className='footer' >
-            <img src={footer} alt="" />
-            <div className="main-footer text-white ">
+            <div className="main-footer text-white  grid lg:grid-cols-3  md:grid-cols-2 gap-5">
 
-                <div>
-                    <span className='text-white text-3xl font-bold decoration-slate-300 mt-2'>
-                        Braa <span style={{ color: "#240f39" }}>Sh</span></span>
-                    <p className='text-white text-xl mt-2'>Front end developer</p></div>
-
-                <div className="icon-footer">
-                    <span className='mt-3 mb-2  text-2xl'>braashaban101@gmail.com</span>
+                <div className='coloum-1 w-50'>
+                    <span className=' text-xl font-bold  mt-2
+                     bg-gradient-to-r from-yellow-00 via-black-500 to-crimson-500 inline-block text-white bg-clip-text'>
+                        Braa Sh</span>
+                    <p className='text-white text-xl mt-2'>Front end developer</p>
                     <div className="icon-footer2 mt-4 text-3xl">
                         <a href="https://www.facebook.com/shaban.braa.7?mibextid=ZbWKwL"> <FaFacebook /> </a>
                         <a href="https://www.instagram.com/braashaban?igsh=NmhvYzBuYmltMzFt"> <FaInstagram /> </a>
@@ -24,17 +22,29 @@ const Footer = () => {
                         <a href="https://in.pinterest.com/braashaban101/"> <FaPinterest /> </a>
                     </div>
 
+                </div>
+
+                <div className="links-footer coloum-2 w-48">
+                    <ul>
+                        <li className='mb-2'> <Link>Skills</Link></li>
+                        <li className='mb-2'> <Link>About </Link></li>
+                        <li className='mb-2'> <Link>portfolio</Link></li>
+                        <li className='mb-2'> <Link>Certificates</Link></li>
+                        <li className='mb-2'>  <Link>contact us</Link></li>
+                    </ul>
+
+
+
+
+                </div>
+                <div className="icon-footer coloum-3 w-48">
+                    <h2 className='text-black mb-2  text-xl' >Contact Us:</h2>
+                <a href="#"><span className='mt-3 mb-2  text-xl'>braashaban101@gmail.com</span></a>    
 
                 </div>
             </div>
-{/* 
-            <div className="links-footer">
-    <a href="">Home</a>
-    <a href="">portfolio</a>
-    <a href="">skills</a>
-    <a href="">certifues</a>
-    <a href="">servicess</a>
-          </div> */}
+        <hr className='mt-10' />
+        <p className='text-center mt-6 text-white'>© 2024 by Braa Shaban. All rights reserved.</p>
         </footer>
     )
 }

@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { useContext } from "react";
 import { themeContext } from "../../Context";
 import br from "../../assets/imgs/bro.svg"
-import Toggle from "../Toggle/Toggle";
+import Toggle from "../Toggle/Toggle"; 
 import "./NavBar.css";
 import { Link } from "react-scroll";
+
 function NavBar() {
-  const theme = useContext(themeContext);
+const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   const [collapse, setCollapse] = useState("nav-items");
@@ -20,16 +21,14 @@ function NavBar() {
     toggleIcon === "toggler-icon"
       ? setToggleIcon("toggler-icon toggle")
       : setToggleIcon("toggler-icon");
-  };
+  }; 
   return (
     <>
-    <div className="nav-container">
+  <div className="nav-container">
      <div className="logo ">
    <img src={br} alt="" />
-    {/*  <h1 className="logo1">Braa <span className="logo2 " style={{ color: darkMode ? "white" : "" }}>sh</span></h1> */}
      </div>
-       
-      
+    
       <div className={collapse}>
         <ul>
          <Link activeClass="active" to="Navbar" spy={true} smooth={true} style={{ color: darkMode ? "white" : "" }}>
@@ -64,7 +63,13 @@ function NavBar() {
         <div className="line-3"></div>
       </div>
     </div>
- 
+  
+  
+
+
+
+
+
     </>
   );
 }
