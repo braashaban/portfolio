@@ -31,6 +31,9 @@ const Portfolio = () => {
          className='project-portfolio flex justify-center items-center'>
         <div className="projects shadow-lg transition-transform">
           <img src={img1} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Business World</h2>
             <div className="arrow-content flex gap-4">
@@ -43,6 +46,9 @@ const Portfolio = () => {
         </div>
         <div  className="projects shadow-lg transition-transform">
           <img src={img9} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }} >Bondi</h2>
             <div className="arrow-content flex gap-4">
@@ -55,6 +61,9 @@ const Portfolio = () => {
         </div>
         <div  className="projects shadow-lg transition-transform">
           <img src={img4} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Phone</h2>
             <div className="arrow-content flex gap-4">
@@ -68,6 +77,9 @@ const Portfolio = () => {
         </div>
         <div className="projects shadow-lg transition-transform" >
           <img src={img2} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>multi pages</h2>
             <div className="arrow-content flex gap-4">
@@ -83,6 +95,9 @@ const Portfolio = () => {
         </div>
         <div   className="projects shadow-lg transition-transform">
           <img src={img5} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Moshify</h2>
             <div className="arrow-content flex gap-4">
@@ -98,6 +113,9 @@ const Portfolio = () => {
 
         <div  className="projects shadow-lg transition-transform">
           <img src={img3} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Education</h2>
             <div className="arrow-content flex gap-4">
@@ -110,6 +128,9 @@ const Portfolio = () => {
         </div>
         <div  className="projects shadow-lg transition-transform">
           <img src={img6} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }} >online course</h2>
             <div className="arrow-content flex gap-4 ">
@@ -124,6 +145,9 @@ const Portfolio = () => {
         </div>
         <div className="projects shadow-lg transition-transform">
           <img src={img7} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>My portfolio</h2>
             <div className="arrow-content flex gap-4">
@@ -136,6 +160,9 @@ const Portfolio = () => {
         </div>
         <div  className="projects shadow-lg transition-transform">
           <img src={img8} alt="" />
+          <div className="overlay">
+          <div class="text">Hello World</div>
+          </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Films</h2>
             <div className="arrow-content flex gap-4">

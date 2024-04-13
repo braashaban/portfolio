@@ -23,11 +23,11 @@ const Certificates = () => {
         transition={{duration:1 ,ease:easeOut,delay:0.6}} className='Certificates mt-5 '>
             <h1 class="section-title-01 text-center " style={{ color: darkMode ? "white" : "" }}>Certificates</h1>
             <h2 class="section-title-02 text-center mb-0" style={{ color: darkMode ? "white" : "" }}>Certificates</h2>
-            <div className="main-Certificates flex flex-wrap justify-center align-items-center  gap-4">
+            <div className="main-Certificates flex flex-wrap justify-center align-items-center  gap-4 ">
                 <div className="imgs mb-2">
                     <img src={img1} alt="" />
+                  
                 </div>
-             
                 <div className="imgs mb-2">
                     <img src={img3} alt="" />
                 </div>

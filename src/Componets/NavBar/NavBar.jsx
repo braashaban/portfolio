@@ -9,11 +9,10 @@ import { Link } from "react-scroll";
 function NavBar() {
 const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+ const [collapse, setCollapse] = useState("nav-items");
 
-  const [collapse, setCollapse] = useState("nav-items");
-  const [toggleIcon, setToggleIcon] = useState("toggler-icon");
-
-  const onToggle = () => {
+  const [toggleIcon, setToggleIcon] = useState("toggler-icon"); 
+   const onToggle = () => {
     collapse === "nav-items"
       ? setCollapse("nav-items nav-collapse")
       : setCollapse("nav-items");
@@ -57,11 +56,13 @@ const theme = useContext(themeContext);
     
         </div>
       </div>
-      <div className={toggleIcon} onClick={onToggle}>
+
+      
+     <div className={toggleIcon} onClick={onToggle}>
         <div className="line-1"></div>
         <div className="line-2"></div>
         <div className="line-3"></div>
-      </div>
+      </div> 
     </div>
   
   
