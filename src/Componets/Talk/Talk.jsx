@@ -5,9 +5,11 @@ import { themeContext } from '../../Context';
 import { useContext } from 'react';
 
 const Talk = () => {
+  /* for dark mood */
   const theme=useContext(themeContext);
   const  darkMode = theme.state.darkMode;
   return (
+    /* main-talks */
     <motion.div 
        initial={{opacity:0,y:-100}}
     animate={{opacity:1,y:0}}
@@ -19,7 +21,7 @@ const Talk = () => {
     <h3 style={{ color: darkMode ? "black" : "" }}>ABOUT YOUR</h3>
     <h2 style={{ color: darkMode ? "black" : "" }}> NEXT PROJECT</h2>
 </div>
-<div className="talk-2">
+<div className="talk-2 ">
     <button className="button flex justify-center  gap-2 items-center"> Get in Touch <a href="https://t.me/Braashabann"> <FaTelegramPlane /></a>  </button>
 </div>
 

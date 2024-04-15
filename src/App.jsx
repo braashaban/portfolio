@@ -4,18 +4,13 @@ import Certificates from './Componets/Certificates/Certificates';
 import ContactUs from './Componets/ContactUs/ContactUs';
 import Exp from './Componets/Exp/Exp';
 import Footer from './Componets/Footer/Footer';
-/* import 'bootstrap/dist/css/bootstrap.min.css'; */
 import Hero from './Componets/Hero/Hero';
-/* import  NavBar from "./Componets/NavBar/NavBar"; */
 import Portfolio from './Componets/Portfolio/Portfolio';
 import Skills from './Componets/Skills/Skills';
-
 import { useContext } from "react";
 import { themeContext } from "./Context";
 import Talk from './Componets/Talk/Talk';
 import About from './Componets/About/About';
-
-import Navb from './Componets/Navb/Navb';
 import NavBar from './Componets/NavBar/NavBar';
 function App() {
   const theme = useContext(themeContext);
@@ -28,8 +23,8 @@ function App() {
       }}>
         
     <NavBar /> 
-  <Hero />
-<About / >
+   <Hero />
+   <About / >
   <Portfolio />
   <Exp />
   <Skills />

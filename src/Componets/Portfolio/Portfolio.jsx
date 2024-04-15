@@ -14,8 +14,9 @@ import { GoArrowUpRight } from "react-icons/go";
 import './Portfolio.css'
 import { useContext } from "react"
 import { themeContext } from "../../Context"
-import {easeOut, motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 const Portfolio = () => {
+  /* dark mood */
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -23,16 +24,17 @@ const Portfolio = () => {
       {/* head Portfolio */}
       <h1 className="section-title-01 text-center " style={{ color: darkMode ? "white" : "" }}>portfolio</h1>
       <h2 className="section-title-02 text-center mb-0" style={{ color: darkMode ? "white" : "" }}>portfolio</h2>
-      {/* SLIder  */}
-      <motion.div 
-          initial={{opacity:0,y:-100}}
-              animate={{opacity:1,y:0}}
-             transition={{duration:1 ,ease:easeOut,delay:0.4}}
-         className='project-portfolio flex justify-center items-center'>
+
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: easeOut, delay: 0.4 }}
+        className='project-portfolio flex justify-center items-center'>
+        {/* projects div */}
         <div className="projects shadow-lg transition-transform">
           <img src={img1} alt="" />
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">Business World</div>
           </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Business World</h2>
@@ -44,10 +46,11 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div  className="projects shadow-lg transition-transform">
+        {/* projects div */}
+        <div className="projects shadow-lg transition-transform">
           <img src={img9} alt="" />
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">Bondi</div>
           </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }} >Bondi</h2>
@@ -59,10 +62,11 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div  className="projects shadow-lg transition-transform">
+        {/* projects div */}
+        <div className="projects shadow-lg transition-transform">
           <img src={img4} alt="" />
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">Phone</div>
           </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Phone</h2>
@@ -75,10 +79,11 @@ const Portfolio = () => {
           </div>
 
         </div>
+        {/* projects div */}
         <div className="projects shadow-lg transition-transform" >
           <img src={img2} alt="" />
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">multi pages</div>
           </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>multi pages</h2>
@@ -87,16 +92,14 @@ const Portfolio = () => {
               <a href="https://braashaban.github.io/advan/index.html">
                 <GoArrowUpRight className="arrow animate-bounce" />
               </a>
-
             </div>
-
           </div>
-
         </div>
-        <div   className="projects shadow-lg transition-transform">
+        {/* projects div */}
+        <div className="projects shadow-lg transition-transform">
           <img src={img5} alt="" />
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">Moshify</div>
           </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Moshify</h2>
@@ -110,11 +113,11 @@ const Portfolio = () => {
 
           </div>
         </div>
-
-        <div  className="projects shadow-lg transition-transform">
+        {/* projects div */}
+        <div className="projects shadow-lg transition-transform">
           <img src={img3} alt="" />
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">Education</div>
           </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Education</h2>
@@ -126,11 +129,14 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div  className="projects shadow-lg transition-transform">
+        {/* projects div */}
+        <div className="projects shadow-lg transition-transform">
           <img src={img6} alt="" />
+          {/* overlays */}
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">online course</div>
           </div>
+          {/* information */}
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }} >online course</h2>
             <div className="arrow-content flex gap-4 ">
@@ -138,15 +144,15 @@ const Portfolio = () => {
               <a href="file:///C:/Users/Windows.10/AppData/Local/Temp/Rar$EXa2636.42397/Braa-shaban-task-2/dddd/index.html">
                 <GoArrowUpRight className="arrow animate-bounce" />
               </a>
-
             </div>
 
           </div>
         </div>
+        {/* projects div */}
         <div className="projects shadow-lg transition-transform">
           <img src={img7} alt="" />
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">My portfolio</div>
           </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>My portfolio</h2>
@@ -158,10 +164,11 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div  className="projects shadow-lg transition-transform">
+        {/* projects div */}
+        <div className="projects shadow-lg transition-transform">
           <img src={img8} alt="" />
           <div className="overlay">
-          <div class="text">Hello World</div>
+            <div class="text">Films</div>
           </div>
           <div className="information  mt-4 pl-1">
             <h2 style={{ color: darkMode ? "white" : "" }}>Films</h2>

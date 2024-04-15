@@ -130,6 +130,13 @@ button img {
   .button-nav button {
       margin: 0;
   }
+
+}
+@media(max-width:1130px){
+  .nav-container {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 
 .nav-collapse {

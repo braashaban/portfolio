@@ -13,6 +13,8 @@ const ContactUs = () => {
   const darkMode = theme.state.darkMode;
   const form = useRef();
 const [doing ,setdoing]=useState(false)
+
+ /* sendEmail */
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -32,7 +34,7 @@ const [doing ,setdoing]=useState(false)
 
   
   return (
-    <div>
+    <div className='mt-9'>
       <motion.div
         initial={{opacity:0,y:-200}}
         animate={{opacity:1,y:0}}

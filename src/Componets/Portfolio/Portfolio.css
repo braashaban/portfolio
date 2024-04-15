@@ -8,14 +8,15 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-position: relative;
+  position: relative;
 }
+
 .portfolio img {
-  max-width:100%;
+  max-width: 100%;
   width: 400px;
   border-top-right-radius: 19px;
   border-top-left-radius: 19px;
- 
+
 }
 
 .portfolio .projects {
@@ -28,8 +29,9 @@ position: relative;
   transition-duration: 150ms;
   transition: 0.8s;
   transition-delay: 100ms;
-  
+
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -40,7 +42,8 @@ position: relative;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #fca71f96;;
+  background-color: #fca71f96;
+  ;
 }
 
 .projects:hover .overlay {
@@ -58,29 +61,31 @@ position: relative;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .portfolio .projects:hover {
-transform: translateY(-10px);
-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.15);
 }
 
-.portfolio .projects .information{
-  padding: 1.2rem 1.2rem ;
+.portfolio .projects .information {
+  padding: 1.2rem 1.2rem;
   width: 400px;
 }
-.portfolio .projects .information h2{
- color: var(--black);
- font-weight: bold;
- margin-bottom: 10px;
- font-size: 20px;
+
+.portfolio .projects .information h2 {
+  color: var(--black);
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .portfolio .projects .information span {
-  
+
   color: var(--blacck);
   font-size: 18px;
 }
 
-.portfolio .projects .information   .arrow{
+.portfolio .projects .information .arrow {
   color: var(--orange);
   font-size: 1.5rem;
   transition: 0.8s;
@@ -102,8 +107,6 @@ box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.15);
   color: var(--orange);
   font-size: 2.5rem;
   font-weight: bold;
-  
+
   border-radius: 60%;
 }
-
-
