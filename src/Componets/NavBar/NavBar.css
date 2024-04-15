@@ -1,20 +1,16 @@
-
-
- .nav-container {
-  max-width: 60.63169rem;
+.nav-container {
+  max-width: 65.63169rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 2.06rem;
   margin: 2.06rem auto;
 }
-
 .logo {
-  width: 32%;
+  width: 22%;
 }
 .logo img{
   width: 3.1rem;
- 
 }
 .logo .logo1{
     font-size: 30px;
@@ -29,30 +25,26 @@
 }
 @media(max-width:1050px){
   .logo {
-    width: 50%;
+    width: 51%;
   }
   .nav-items {
     width: 50%;
   
   }
 }
-
 .nav-items {
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .nav-items ul {
   display: flex;
   transition: 0.6s ease-in;
 }
-
 .nav-items ul a {
   margin-right: 2.19rem;
   color: rgba(15, 15, 15, 1);
-  font-family: Inter;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -107,7 +99,7 @@ button img {
 
   .nav-items {
       position: fixed;
-      background-color: gray;
+      background-color: var(--orange);
       flex-direction: column;
       color: #0F0F0F;
       text-align: start;
@@ -118,6 +110,7 @@ button img {
       transform: translateX(100%);
       transition: 0.5s ease;
       z-index: 8;
+      padding-bottom: 20px;
   }
 
   ul {

@@ -6,14 +6,14 @@ import { useContext } from 'react';
 import { themeContext } from '../../Context';
 
 const About = () => {
+/* for dark mode */
+
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     return (
         <div className='mt-10'>
-
             <h1 className="section-title-01 text-center " style={{ color: darkMode ? "white" : "" }}>About Me</h1>
             <h2 className="section-title-02 text-center mb-0" style={{ color: darkMode ? "white" : "" }}>About Me</h2>
-
             <div className='works' id='works'>
                 <motion.div
                     initial={{ opacity: 0, y: -100 }}
@@ -26,7 +26,7 @@ const About = () => {
                         </span>
                         <span className='mt-2'>Front end Developer</span>
                         <p className='mt-2 mb-2 w-[500px]' style={{ color: darkMode ? "white" : "" }}>
-I graduated from Computer Engineering and Automatic Control , Interested in the field of Programming, especially Web Development, I aspire to become one of the best programmers in the world, 
+                   I graduated from Computer Engineering and Automatic Control , Interested in the field of Programming, especially Web Development, I aspire to become one of the best programmers in the world, 
                         I always strive to move forward and gain new experiences.
                         </p>
                         <a href={braacv} download>
@@ -36,16 +36,19 @@ I graduated from Computer Engineering and Automatic Control , Interested in the 
                             style={{ background: "#ABF1FF94" }} ></div>
                     </div>
 
-                    {/* right side */}
                 </motion.div>
+                
+         {/* right side */}
+        
                 <motion.div
                     initial={{ opacity: 0, y: -100 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: easeOut, delay: 0.4 }}
                     className="img-work">
                     <img src={img1} alt="" />
+                   
                 </motion.div>
-
+              
             </div>
         </div>
     )
