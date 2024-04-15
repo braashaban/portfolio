@@ -6,15 +6,18 @@ import { useContext } from 'react';
 import { themeContext } from '../../Context';
 
 const About = () => {
-/* for dark mode */
-
+      /* for dark mode */
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     return (
+     /* About */
         <div className='mt-10'>
+            {/* titleeee */}
             <h1 className="section-title-01 text-center " style={{ color: darkMode ? "white" : "" }}>About Me</h1>
             <h2 className="section-title-02 text-center mb-0" style={{ color: darkMode ? "white" : "" }}>About Me</h2>
-            <div className='works' id='works'>
+            <div className='About' id='works'>
+                             
+         {/* right side */}
                 <motion.div
                     initial={{ opacity: 0, y: -100 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -22,7 +25,7 @@ const About = () => {
                     className="work-left">
                     <div className="awesome">
                         <span style={{ color: darkMode ? "white" : "" }}>
-                        Iam Braa Shaban
+                        I am Braa Shaban
                         </span>
                         <span className='mt-2'>Front end Developer</span>
                         <p className='mt-2 mb-2 w-[500px]' style={{ color: darkMode ? "white" : "" }}>

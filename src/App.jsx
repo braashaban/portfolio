@@ -13,7 +13,7 @@ import Skills from './Componets/Skills/Skills';
 import { useContext } from "react";
 import { themeContext } from "./Context";
 import Talk from './Componets/Talk/Talk';
-import About from './Componets/Works/About';
+import About from './Componets/About/About';
 
 import Navb from './Componets/Navb/Navb';
 import NavBar from './Componets/NavBar/NavBar';

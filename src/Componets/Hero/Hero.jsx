@@ -3,23 +3,19 @@ import './Hero.css'
 import imgGett from "../../assets/imgs/github.png";
 import imglinkedin from "../../assets/imgs/linkedin.png";
 import imginstagram from "../../assets/imgs/instagram.png";
-import {  AnimatePresence, easeOut, motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 import v1 from "../../assets/imgs/hero1.png";
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
-/* for dark mode */
+  /* for dark mode */
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-
-
-    <section className='container1'>
-   
-
- 
+    <section className='Hero'>
+      {/* right hero */}
       <motion.div
         variants={{
           hidden: { opacity: 0 },
@@ -57,7 +53,7 @@ const Hero = () => {
           repeat={Infinity}>
 
         </TypeAnimation>
-        <div className="blur21"></div>
+
         <motion.p
           variants={{
             hidden: { opacity: 0 },
@@ -95,20 +91,17 @@ const Hero = () => {
 
         </motion.div>
       </motion.div>
-    
+
+      {/* left hero */}
       <motion.div
-        initial={{opacity:0,y:-100}}
-        animate={{opacity:1,y:0}}
-       transition={{duration:1 ,ease:easeOut,delay:0.4}}
-    
-      
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: easeOut, delay: 0.4 }}
+        /* img hero */
         className="imgss">
         <img src={v1} alt="" />
-
         <div className="blur22"></div>
       </motion.div>
-
-
     </section>
 
   )
